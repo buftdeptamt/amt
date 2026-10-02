@@ -343,7 +343,7 @@ return layout(`
         <!-- Gallery Image 01 -->
         <div class="gallery-item">
           <img
-            src="https://your-image-url-here.com/image1.jpg"
+            src="https://github.com/buftdeptamt/amt/blob/fd61126c079b1092a9f970694e60ee278b4b8026/WhatsApp%20Image%202026-10-02%20at%203.06.36%20PM.jpeg"
             alt="AMT Student Life"
           >
           <span class="gallery-caption">AMT Student Life</span>
@@ -352,7 +352,7 @@ return layout(`
         <!-- Gallery Image 02 -->
         <div class="gallery-item">
           <img
-            src="https://your-image-url-here.com/image2.jpg"
+            src=""
             alt="Apparel Manufacturing Lab"
           >
           <span class="gallery-caption">Apparel Manufacturing Labs</span>
@@ -370,7 +370,7 @@ return layout(`
         <!-- Gallery Image 04 -->
         <div class="gallery-item">
           <img
-            src="https://your-image-url-here.com/image4.jpg"
+            src="https://github.com/buftdeptamt/amt/blob/fd61126c079b1092a9f970694e60ee278b4b8026/WhatsApp%20Image%202026-10-02%20at%203.06.36%20PM.jpeg
             alt="AMT Campus Experience"
           >
           <span class="gallery-caption">Campus Experience</span>
@@ -379,7 +379,7 @@ return layout(`
         <!-- Gallery Image 05 -->
         <div class="gallery-item">
           <img
-            src="https://your-image-url-here.com/image5.jpg"
+            src="https://github.com/buftdeptamt/amt/blob/fd61126c079b1092a9f970694e60ee278b4b8026/WhatsApp%20Image%202026-10-02%20at%203.06.38%20PM%20(1).jpeg"
             alt="Industry Oriented Learning"
           >
           <span class="gallery-caption">Industry-oriented Learning</span>
