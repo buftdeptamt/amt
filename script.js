@@ -327,38 +327,121 @@ return layout(`
 `);
 },
 
-gallery(){
-return layout(`
-<section class="section">
-  <div class="container">
-    ${sectionHead("Departmental Gallery","A visual window into the AMT learning environment.","Use this gallery as the front-end shell for approved departmental photography. The current concept uses BUFT's published AMT banner image and keeps captions ready for verified lab/classroom/student-activity media.")}
-    <div class="gallery">
-      <div class="gallery-item"><span class="gallery-caption">AMT Student Life</span></div>
-      <div class="gallery-item"><span class="gallery-caption">Apparel Manufacturing Labs</span></div>
-      <div class="gallery-item"><span class="gallery-caption">Practical Learning</span></div>
-      <div class="gallery-item"><span class="gallery-caption">Campus Experience</span></div>
-      <div class="gallery-item"><span class="gallery-caption">Industry-oriented Learning</span></div>
-    </div>
-    <div class="btn-row"><a class="btn btn-outline" href="https://buft.edu.bd/infrastructure-facilities/" target="_blank" rel="noopener">View BUFT Facilities ↗</a></div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    ${sectionHead("Alumni Stories","Add verified stories. Build real trust.","A high-conversion departmental site should feature genuine alumni outcomes rather than invented testimonials. This section is therefore structured as a publication-ready placeholder.")}
-    <div class="quote-grid">
-      ${["Alumni name + current role","Alumni name + company / sector","Alumni name + career highlight"].map((x,i)=>`
+   gallery() {
+    return layout(`
+  <section class="section">
+    <div class="container">
+      ${sectionHead(
+      "Departmental Gallery",
+      "A visual window into the AMT learning environment.",
+      "Explore AMT labs, classrooms, student activities and the department's academic environment."
+    )}
+
+      <div class="gallery">
+
+        <!-- Gallery Image 01 -->
+        <div class="gallery-item">
+          <img
+            src="https://your-image-url-here.com/image1.jpg"
+            alt="AMT Student Life"
+          >
+          <span class="gallery-caption">AMT Student Life</span>
+        </div>
+
+        <!-- Gallery Image 02 -->
+        <div class="gallery-item">
+          <img
+            src="https://your-image-url-here.com/image2.jpg"
+            alt="Apparel Manufacturing Lab"
+          >
+          <span class="gallery-caption">Apparel Manufacturing Labs</span>
+        </div>
+
+        <!-- Gallery Image 03 -->
+        <div class="gallery-item">
+          <img
+            src="https://your-image-url-here.com/image3.jpg"
+            alt="Practical Learning"
+          >
+          <span class="gallery-caption">Practical Learning</span>
+        </div>
+
+        <!-- Gallery Image 04 -->
+        <div class="gallery-item">
+          <img
+            src="https://your-image-url-here.com/image4.jpg"
+            alt="AMT Campus Experience"
+          >
+          <span class="gallery-caption">Campus Experience</span>
+        </div>
+
+        <!-- Gallery Image 05 -->
+        <div class="gallery-item">
+          <img
+            src="https://your-image-url-here.com/image5.jpg"
+            alt="Industry Oriented Learning"
+          >
+          <span class="gallery-caption">Industry-oriented Learning</span>
+        </div>
+
+      </div>
+
+      <div class="btn-row">
+        <a
+          class="btn btn-outline"
+          href="https://buft.edu.bd/infrastructure-facilities/"
+          target="_blank"
+          rel="noopener"
+        >
+          View BUFT Facilities ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      ${sectionHead(
+      "Alumni Stories",
+      "Add verified stories. Build real trust.",
+      "A high-conversion departmental site should feature genuine alumni outcomes rather than invented testimonials."
+    )}
+
+      <div class="quote-grid">
+
         <article class="quote">
           <span class="placeholder-tag">Verified story needed</span>
           <div class="quote-mark">“</div>
-          <p>Replace this space with a short, permission-approved alumni quote describing how AMT learning supported the graduate's career journey.</p>
-          <small>${x}</small>
-        </article>`).join("")}
+          <p>
+            Replace this space with a verified alumni testimonial.
+          </p>
+          <small>Alumni name + current role</small>
+        </article>
+
+        <article class="quote">
+          <span class="placeholder-tag">Verified story needed</span>
+          <div class="quote-mark">“</div>
+          <p>
+            Replace this space with a verified alumni testimonial.
+          </p>
+          <small>Alumni name + company</small>
+        </article>
+
+        <article class="quote">
+          <span class="placeholder-tag">Verified story needed</span>
+          <div class="quote-mark">“</div>
+          <p>
+            Replace this space with a verified alumni testimonial.
+          </p>
+          <small>Alumni name + career highlight</small>
+        </article>
+
+      </div>
     </div>
-  </div>
-</section>
-`);
-}
+  </section>
+  `);
+  }
 };
 
 function routeFromHash(){
